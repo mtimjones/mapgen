@@ -2,8 +2,8 @@
 
 #define COLS  80
 #define ROWS  40
-#define WALK  80
-#define RUNS  30
+#define WALK  50
+#define RUNS  40
 
 void main()
 {
@@ -14,8 +14,8 @@ void main()
 
    for ( runs = 0 ; runs < RUNS ; runs++ )
    {
-      rows = ROWS / 2;
-      cols = COLS / 2;
+      rows = getRand( ROWS );
+      cols = getRand( COLS );
 
       for ( walk = 0 ; walk < WALK ; walk++ )
       {
