@@ -35,6 +35,7 @@ void print_map( map_t *map )
       {
           printf("%c", map->adrs[cols+(rows*map->cols)]);
       }
+      printf("\n");
    }
 }
 
